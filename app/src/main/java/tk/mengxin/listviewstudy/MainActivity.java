@@ -16,7 +16,9 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         ListViewFragment fragment1 = new ListViewFragment();
-        fragmentTransaction.replace(R.id.fragment_list_view, fragment1);
+        SignatureManagerFragment fragment2 = new SignatureManagerFragment();
+
+        fragmentTransaction.replace(R.id.fragment_list_view, fragment2);
 
         fragmentTransaction.commit();
 
